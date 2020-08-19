@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+html,
+body,
+#app,
+#app > div {
+	height: calc(100vh-200px);
+	margin: 0;
+	background: #222;
+	scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: calc(100vh-250px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content-wrapper {
+	flex: 1 1 auto;
+	overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.page-content {
+	height: 100vh;
+	display: flex;
+	flex: 1 1 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content-container {
+	display: flex;
+	flex-flow: column;
+	flex-wrap: wrap;
+	position: relative;
+	height: 300px;
+	transform: translateY(-50%);
+	top: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.go-to-socials {
+	position: relative;
+	left: 50%;
+	width: 20px;
+	margin: 0;
+	z-index: 10;
+}
+
+.go-to-socials:hover {
+	text-decoration: none;
+	animation: scroller 3s infinite;
+	animation-timing-function: ease;
+}
+
+@keyframes scroller {
+	from {
+		:0 ;
+	}
+
+	to {
+		bottom: 30px;
+	}
+}
+.maintenance-card {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	flex-flow: column;
+}
+
+.footer {
+	display: flex;
+	flex-flow: column;
+	flex-wrap: wrap;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #1e87f0;
+	color: white;
+	text-align: center;
+	height: 100px;
+	padding-top: 20px;
+}
+
+.socials-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-top: 5px;
+	height: 30px;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+}
+
+.socials-wrapper li {
+	list-style: none;
+}
+
+.uk-icon {
+	padding-top: 10px;
+	padding-left: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.uk-icon:hover {
+	opacity: 0.5;
+	color: white;
+	text-decoration: none;
+}
+
+.socials-linkedin {
+	color: white;
+}
+
+.socials-github {
+	color: white;
+}
+
+.copyright {
+	padding-top: 20px;
 }
