@@ -2,7 +2,6 @@ html,
 body,
 #app,
 #app > div {
-	height: calc(100vh-200px);
 	margin: 0;
 	background: #222;
 	scroll-behavior: smooth;
@@ -24,7 +23,6 @@ body {
 	height: 100vh;
 	display: flex;
 	flex: 1 1 auto;
-	height: calc(100vh-100px);
 }
 
 .main-content-container {
