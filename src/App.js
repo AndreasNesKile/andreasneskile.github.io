@@ -39,7 +39,7 @@ function App() {
 							</p>
 							<a
 								className="fa fa-chevron-down go-to-socials"
-								uk-scroll
+								uk-scroll="true"
 								href="#socials"
 							></a>
 						</div>
@@ -51,7 +51,7 @@ function App() {
 					<li className="socials-list">
 						<a
 							href="https://www.linkedin.com/in/andreasneskile"
-							target="_blank"
+							target="_"
 							uk-icon="icon: linkedin; ratio: 1.5"
 							className="uk-icon-link socials-linkedin"
 							alt="linkedin profile"
@@ -62,7 +62,7 @@ function App() {
 							href="https://github.com/AndreasNesKile"
 							className="uk-icon-link socials-github"
 							uk-icon="icon: github; ratio: 1.5"
-							target="_blank"
+							target="_"
 						></a>
 					</li>
 				</div>
