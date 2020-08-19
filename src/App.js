@@ -24,7 +24,7 @@ function App() {
 						<div className="uk-card uk-card-primary uk-card-body uk-card-hover maintenance-card">
 							<h3 className="uk-card-title">
 								Hei!
-								<span role="img" alt="smiley face">
+								<span role="img" aria-label="smiley face">
 									😀
 								</span>
 							</h3>
@@ -37,11 +37,9 @@ function App() {
 								Se under for sosiale medier og
 								kontaktinformasjon.
 							</p>
-							<a
-								className="fa fa-chevron-down go-to-socials"
-								uk-scroll="true"
-								href="#socials"
-							></a>
+							<a uk-scroll="true" href="#socials">
+								<span className="fa fa-chevron-down go-to-socials"></span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -52,18 +50,21 @@ function App() {
 						<a
 							href="https://www.linkedin.com/in/andreasneskile"
 							target="_"
-							uk-icon="icon: linkedin; ratio: 1.5"
-							className="uk-icon-link socials-linkedin"
 							alt="linkedin profile"
-						></a>
+						>
+							<span
+								uk-icon="icon: linkedin; ratio: 1.5"
+								className="uk-icon-link socials-linkedin"
+							></span>
+						</a>
 					</li>
 					<li>
-						<a
-							href="https://github.com/AndreasNesKile"
-							className="uk-icon-link socials-github"
-							uk-icon="icon: github; ratio: 1.5"
-							target="_"
-						></a>
+						<a href="https://github.com/AndreasNesKile" target="_">
+							<span
+								className="uk-icon-link socials-github"
+								uk-icon="icon: github; ratio: 1.5"
+							></span>
+						</a>
 					</li>
 				</div>
 				<div className="copyright">
