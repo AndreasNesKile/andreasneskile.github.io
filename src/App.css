@@ -13,7 +13,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: calc(100vh-100px);
 }
 
 .content-wrapper {
@@ -25,6 +24,7 @@ body {
 	height: 100vh;
 	display: flex;
 	flex: 1 1 auto;
+	height: calc(100vh-100px);
 }
 
 .main-content-container {
