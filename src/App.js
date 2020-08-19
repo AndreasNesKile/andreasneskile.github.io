@@ -50,11 +50,10 @@ function App() {
 						<a
 							href="https://www.linkedin.com/in/andreasneskile"
 							target="_"
-							alt="linkedin profile"
 						>
 							<span
-								uk-icon="icon: linkedin; ratio: 1.5"
 								className="uk-icon-link socials-linkedin"
+								uk-icon="icon: linkedin; ratio: 1.5"
 							></span>
 						</a>
 					</li>
