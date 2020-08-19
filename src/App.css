@@ -51,15 +51,6 @@ body {
 	animation-timing-function: ease;
 }
 
-@keyframes scroller {
-	from {
-		:0 ;
-	}
-
-	to {
-		bottom: 30px;
-	}
-}
 .maintenance-card {
 	margin: 0;
 	display: flex;
