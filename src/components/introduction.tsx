@@ -3,8 +3,8 @@ import React from "react";
 import "./introduction.scss";
 
 const Introduction = () => (
-	<div className="uk-section introduction-section">
-		<div className="uk-container text">
+	<div className="introduction-section">
+		<div className="text">
 			Hei, jeg heter
 			<span className="highlight"> Andreas Nes Kile.</span>
 			<br />

@@ -4,10 +4,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { fas, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-// import { f}"@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import Introduction from "./components/introduction";
-// import Navbar from "./components/navbar";
 
 library.add(fab, fas, faGithub, faLinkedin, faChevronDown);
 
@@ -31,34 +29,40 @@ function App() {
 
 	return (
 		<div className="App">
-			{/* <Navbar /> */}
-			<div className="uk-position-center-left uk-light dotnav">
-				<ul className="uk-dotnav uk-dotnav-vertical" id="sections">
-					{sections.map((section, i) => (
-						<li
-							className={
-								activeSection.sectionName ===
-								section.sectionName
-									? "uk-active"
-									: null
-							}
-							key={i}
-						>
-							<a
-								href={"#" + section.sectionName}
-								aria-label={section.sectionName}
-								onClick={() => setActiveSection(section)}
-							></a>
-						</li>
-					))}
-				</ul>
-			</div>
-			<div className="uk-container uk-container-small page-content">
-				<div
-					className="uk-container uk-container-small introduction-container"
-					id="introduksjon"
-				>
-					<Introduction />
+			<div className="content-wrapper">
+				<div className="uk-position-center-left uk-light dotnav">
+					<ul className="uk-dotnav uk-dotnav-vertical" id="sections">
+						{sections.map((section, i) => (
+							<li
+								className={
+									activeSection.sectionName ===
+									section.sectionName
+										? "uk-active"
+										: null
+								}
+								key={i}
+							>
+								<a
+									href={"#" + section.sectionName}
+									aria-label={section.sectionName}
+									onClick={() => setActiveSection(section)}
+									uk-tooltip={
+										"title: " +
+										section.sectionName.toUpperCase() +
+										"; pos: right"
+									}
+								></a>
+							</li>
+						))}
+					</ul>
+				</div>
+				<div className="uk-section">
+					<div
+						className="uk-container uk-container-large introduction-container uk-animation-slide-top-medium"
+						id="introduksjon"
+					>
+						<Introduction />
+					</div>
 				</div>
 			</div>
 			<div className="footer" id="sosiale-medier">

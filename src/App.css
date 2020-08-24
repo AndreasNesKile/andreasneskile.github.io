@@ -7,38 +7,12 @@ body,
 	scroll-behavior: smooth;
 }
 
-body {
+.content-wrapper {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column;
 	justify-content: center;
 	text-align: center;
-}
-
-.content-wrapper {
-	flex: 1 1 auto;
-	overflow: hidden;
-}
-
-.go-to-socials {
-	position: relative;
-	left: 50%;
-	width: 20px;
-	margin: 0;
-	z-index: 10;
-}
-
-.go-to-socials:hover {
-	text-decoration: none;
-	animation: scroller 3s infinite;
-	animation-timing-function: ease;
-}
-
-.maintenance-card {
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	flex-flow: column;
+	height: 100vh;
 }
 
 .dotnav {
