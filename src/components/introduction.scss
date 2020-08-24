@@ -1,0 +1,18 @@
+.introduction-section {
+	height: 100vh;
+	align-content: center;
+	display: flex;
+	flex-flow: column;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.text {
+	font-size: 32pt;
+	color: white;
+	font-weight: bold;
+
+	& .highlight {
+		color: #e31b6d;
+	}
+}

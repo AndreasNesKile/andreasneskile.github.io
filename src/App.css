@@ -8,31 +8,15 @@ body,
 }
 
 body {
-	margin: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;
 }
 
 .content-wrapper {
 	flex: 1 1 auto;
 	overflow: hidden;
-}
-
-.page-content {
-	height: 100vh;
-	display: flex;
-	flex: 1 1 auto;
-}
-
-.main-content-container {
-	display: flex;
-	flex-flow: column;
-	flex-wrap: wrap;
-	position: relative;
-	height: 300px;
-	transform: translateY(-50%);
-	top: 50%;
 }
 
 .go-to-socials {
@@ -55,6 +39,10 @@ body {
 	flex-direction: column;
 	position: relative;
 	flex-flow: column;
+}
+
+.dotnav {
+	position: sticky !important;
 }
 
 .footer {
@@ -110,4 +98,8 @@ body {
 
 .copyright {
 	padding-top: 20px;
+}
+
+.dotnav {
+	margin-left: 20px;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "uikit";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -6,45 +6,62 @@ import { fas, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 // import { f}"@fortawesome/free-solid-svg-icons";
 import "./App.css";
+import Introduction from "./components/introduction";
+// import Navbar from "./components/navbar";
 
 library.add(fab, fas, faGithub, faLinkedin, faChevronDown);
 
-function copyrightYear() {
-	let today = new Date();
-	let year = today.getFullYear();
-	return year;
-}
+const sections = [
+	{
+		sectionName: "introduksjon",
+	},
+	{
+		sectionName: "erfaring",
+	},
+	{
+		sectionName: "prosjekter",
+	},
+	{
+		sectionName: "sosiale-medier",
+	},
+];
 
 function App() {
+	const [activeSection, setActiveSection] = useState(sections[0]);
+
 	return (
 		<div className="App">
-			<div className="content-wrapper">
-				<div className="uk-container page-content">
-					<div className="uk-container uk-container-large main-content-container">
-						<div className="uk-card uk-card-primary uk-card-body uk-card-hover maintenance-card">
-							<h3 className="uk-card-title">
-								Hei!
-								<span role="img" aria-label="smiley face">
-									😀
-								</span>
-							</h3>
-							<p className="maintenance-descripiton">
-								Min portfolio er for øyeblikket under
-								oppbygging!
-							</p>
-
-							<p>
-								Se under for sosiale medier og
-								kontaktinformasjon.
-							</p>
-							<a uk-scroll="true" href="#socials">
-								<span className="fa fa-chevron-down go-to-socials"></span>
-							</a>
-						</div>
-					</div>
+			{/* <Navbar /> */}
+			<div className="uk-position-center-left uk-light dotnav">
+				<ul className="uk-dotnav uk-dotnav-vertical" id="sections">
+					{sections.map((section, i) => (
+						<li
+							className={
+								activeSection.sectionName ===
+								section.sectionName
+									? "uk-active"
+									: null
+							}
+							key={i}
+						>
+							<a
+								href={"#" + section.sectionName}
+								aria-label={section.sectionName}
+								onClick={() => setActiveSection(section)}
+							></a>
+						</li>
+					))}
+				</ul>
+			</div>
+			<div className="uk-container uk-container-small page-content">
+				<div
+					className="uk-container uk-container-small introduction-container"
+					id="introduksjon"
+				>
+					<Introduction />
 				</div>
 			</div>
-			<div className="footer" id="socials">
+			<div className="footer" id="sosiale-medier">
 				<div className="socials-wrapper">
 					<li className="socials-list">
 						<a
@@ -67,7 +84,7 @@ function App() {
 					</li>
 				</div>
 				<div className="copyright">
-					Håndlaget av meg | {copyrightYear()}
+					Håndlaget av meg | {new Date().getFullYear()}
 				</div>
 			</div>
 		</div>
