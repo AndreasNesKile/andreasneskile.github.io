@@ -13,6 +13,65 @@
 	font-weight: bold;
 
 	& .highlight {
-		color: #e31b6d;
+		color: #fff685;
+		width: 360px;
+		margin-left: 10px;
 	}
+
+	display: flex;
+	flex-flow: column;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+}
+
+.break {
+	width: 100%;
+}
+
+.i-am-container {
+	display: flex;
+	flex: 2;
+	flex-wrap: wrap;
+	flex-flow: column;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.fullstack-wrapper {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	margin: 15px 30px;
+	top: -1em;
+}
+
+.full-p {
+	position: relative;
+	width: auto;
+	font-size: 0.7em;
+	margin-top: 10px;
+	margin-bottom: -15px;
+	animation-delay: 0.2s;
+	animation-duration: 0.7s;
+}
+
+.stack-p {
+	position: relative;
+	width: auto;
+	font-size: 0.7em;
+	animation-delay: 0.3s;
+	animation-duration: 0.7s;
+}
+
+.junior-text {
+	position: relative;
+	font-size: 0.4em;
+	top: 2em;
+	right: 2em;
+	z-index: 9;
+	transform: rotate(-45deg) scale(0.7);
 }

@@ -75,5 +75,40 @@ body,
 }
 
 .dotnav {
+	z-index: 10;
 	margin-left: 20px;
+	width: 50px;
+}
+
+.to-the-top-container {
+	position: relative;
+}
+
+.to-the-top-button {
+	text-transform: capitalize;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.uk-dotnav-categories {
+	text-transform: capitalize;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.introduksjon {
+	background: #fff685;
+	color: black;
+}
+
+.erfaring {
+	background: #f75990;
+}
+
+.prosjekter {
+	background: #ff1d58;
+}
+
+.sosiale-medier {
+	background: #1e87f0;
 }
