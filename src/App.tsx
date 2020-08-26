@@ -43,7 +43,7 @@ function App() {
 										activeSection.sectionName ===
 										section.sectionName
 											? "uk-active"
-											: null
+											: ""
 									}
 									key={i}
 								>
@@ -68,7 +68,7 @@ function App() {
 							))}
 						</ul>
 					</div>
-					<div className="uk-section">
+					<div className="uk-section introduction-section">
 						<div
 							className="uk-container introduction-container uk-animation-slide-top-medium"
 							id="introduksjon"
@@ -76,8 +76,11 @@ function App() {
 							<Introduction />
 						</div>
 					</div>
-					<div className="uk-section project-section">
-						<div className="uk-container projects-container">
+					<div className="uk-section projects-section">
+						<div
+							className="uk-container projects-container"
+							id="prosjekter"
+						>
 							<Projects />
 						</div>
 					</div>
