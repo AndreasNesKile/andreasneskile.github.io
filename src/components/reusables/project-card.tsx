@@ -34,14 +34,14 @@ const ProjectCard = (props: IProjectCard) => (
 			<button
 				className="uk-button uk-button-primary uk-margin-small-right"
 				type="button"
-				uk-toggle="target: #property-project-modal"
+				uk-toggle={"target: #" + props.customClassName + "-modal"}
 			>
 				Les mer
 			</button>
 		</div>
 		<ProjectModal
-			projectModalId="property-project-modal"
-			headlineModal="Property Project"
+			projectModalId={props.customClassName + "-modal"}
+			headlineModal={props.title}
 			imgSrc={props.imgSrc}
 			slideshowArray={props.slideshowArray}
 		/>

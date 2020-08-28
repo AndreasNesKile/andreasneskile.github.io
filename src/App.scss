@@ -1,10 +1,17 @@
 html,
 body,
-#app,
-#app > div {
+#App,
+#App > div {
 	margin: 0;
 	background: #222;
 	scroll-behavior: smooth;
+}
+
+.main-content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 100%;
 }
 
 .content-wrapper {
@@ -18,13 +25,39 @@ body,
 	position: sticky !important;
 }
 
-.footer {
+.introduction-section {
+	height: 100vh;
+}
+
+.experience-section {
+	background: rgba(247, 89, 144, 0.2);
+	height: 100%;
+}
+
+.projects-section {
+	background: rgba(255, 29, 88, 0.2);
 	display: flex;
+	flex-direction: column;
+	// margin-bot: 40px;
+}
+
+.section-title-projects {
+	display: flex;
+	justify-content: center;
+}
+
+.projects-title {
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-wrapper {
+	display: flex;
+	flex-direction: column;
 	flex-flow: column;
 	flex-wrap: wrap;
 	position: relative;
-	left: 0;
-	bottom: 0;
 	width: 100%;
 	background-color: #1e87f0;
 	color: white;
@@ -37,7 +70,6 @@ body,
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	margin-top: 5px;
 	height: 30px;
 	width: 100%;
 	justify-content: center;
@@ -79,7 +111,7 @@ body,
 	width: 50px;
 }
 
-.to-the-top-container {
+.to-the-top-wrapper {
 	position: relative;
 }
 

@@ -6,7 +6,7 @@ const Introduction = () => (
 	<div className="introduction-section">
 		<div className="text">
 			Hei, jeg heter
-			<span className="highlight">Andreas Kes Kile</span>
+			<span className="highlight">Andreas Nes Kile</span>.
 			<br />
 			<div className="break"></div>
 			<div className="i-am-container">

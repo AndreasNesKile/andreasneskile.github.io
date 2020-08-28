@@ -30,7 +30,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<div className="main-content uk-section uk-section-small">
+			<div className="main-content">
 				<div className="content-wrapper">
 					<div className="uk-position-center-left uk-light dotnav">
 						<ul
@@ -76,55 +76,61 @@ function App() {
 							<Introduction />
 						</div>
 					</div>
+					<div className="uk-section experience-section">
+						<div className="section-title experience" id="erfaring">
+							<h1 className="projects-title">Erfaring</h1>
+						</div>
+					</div>
 					<div className="uk-section projects-section">
-						<div
-							className="uk-container projects-container"
-							id="prosjekter"
-						>
+						<div className="section-title-projects" id="prosjekter">
+							<h1 className="projects-title">Prosjekter</h1>
+						</div>
+						<div className="uk-container projects-container">
 							<Projects />
 						</div>
 					</div>
-				</div>
-				<div className="uk-container to-the-top-container">
-					<a
-						href="/"
-						uk-totop="true"
-						uk-scroll="true"
-						uk-tooltip={
-							"title: Til toppen; pos: top; cls: uk-active to-the-top-button"
-						}
-						className="to-top-button uk-position-center"
-					></a>
-				</div>
-			</div>
-			<div className="footer-wrapper">
-				<div className="footer" id="sosiale-medier">
-					<div className="socials-wrapper">
-						<li className="socials-list">
-							<a
-								href="https://www.linkedin.com/in/andreasneskile"
-								target="_"
-							>
-								<span
-									className="uk-icon-link socials-linkedin"
-									uk-icon="icon: linkedin; ratio: 1.5"
-								></span>
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://github.com/AndreasNesKile"
-								target="_"
-							>
-								<span
-									className="uk-icon-link socials-github"
-									uk-icon="icon: github; ratio: 1.5"
-								></span>
-							</a>
-						</li>
+					<div className="to-the-top-wrapper">
+						<a
+							href="/"
+							uk-totop="true"
+							uk-scroll="true"
+							uk-tooltip={
+								"title: Til toppen; pos: top; cls: uk-active to-the-top-button"
+							}
+							className="to-top-button uk-position-top"
+						></a>
 					</div>
-					<div className="copyright">
-						Håndlaget av meg | {new Date().getFullYear()}
+				</div>
+
+				<div className="footer-wrapper">
+					<div className="footer" id="sosiale-medier">
+						<div className="socials-wrapper">
+							<li className="socials-list">
+								<a
+									href="https://www.linkedin.com/in/andreasneskile"
+									target="_"
+								>
+									<span
+										className="uk-icon-link socials-linkedin"
+										uk-icon="icon: linkedin; ratio: 1.5"
+									></span>
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://github.com/AndreasNesKile"
+									target="_"
+								>
+									<span
+										className="uk-icon-link socials-github"
+										uk-icon="icon: github; ratio: 1.5"
+									></span>
+								</a>
+							</li>
+						</div>
+						<div className="copyright">
+							Håndlaget av meg | {new Date().getFullYear()}
+						</div>
 					</div>
 				</div>
 			</div>
