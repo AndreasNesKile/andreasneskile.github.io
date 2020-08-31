@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
 import "./project-modal.scss";
 
@@ -7,6 +7,7 @@ interface IProjectModal {
 	headlineModal: string;
 	imgSrc: string;
 	slideshowArray?: string[];
+	projectDescription: any;
 }
 
 const ProjectModal = (props: IProjectModal) => (
@@ -39,6 +40,7 @@ const ProjectModal = (props: IProjectModal) => (
 												key={i}
 												alt=""
 												uk-cover="true"
+												className="slideshow-image"
 											></img>
 										</li>
 								  ))
@@ -61,10 +63,11 @@ const ProjectModal = (props: IProjectModal) => (
 				</div>
 				<div className="uk-padding-large uk-light uk-flex-top">
 					<h1>{props.headlineModal}</h1>
-					<p>
-						This is a test text in order to see what it looks like
-						when a sentence is quite long and unique.
-					</p>
+					<div className="project-description">
+						<div className="overall-description">
+							{props.projectDescription}
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

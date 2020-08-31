@@ -9,7 +9,7 @@ interface IProjectCard {
 	customClassName: string;
 	imgSrc: string;
 	slideshowArray?: string[];
-	imgPos: string;
+	projectDescription: any;
 }
 
 const ProjectCard = (props: IProjectCard) => (
@@ -17,9 +17,7 @@ const ProjectCard = (props: IProjectCard) => (
 		className="uk-card uk-card-default uk-hover project-card"
 		uk-hover="true"
 	>
-		<div
-			className={"uk-card-media-" + props.imgPos + " uk-cover-container"}
-		>
+		<div className={"uk-card-media-" + props.title + " uk-cover-container"}>
 			<img
 				src={props.imgSrc}
 				className={props.customClassName + "-image"}
@@ -44,6 +42,7 @@ const ProjectCard = (props: IProjectCard) => (
 			headlineModal={props.title}
 			imgSrc={props.imgSrc}
 			slideshowArray={props.slideshowArray}
+			projectDescription={props.projectDescription}
 		/>
 	</div>
 );

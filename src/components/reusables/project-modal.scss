@@ -1,7 +1,13 @@
 .project-modal {
-	height: 100vh;
+	height: 100%;
+	overflow-y: auto;
 }
 
 .project-slideshow {
 	list-style: none;
+}
+
+.slideshow-image {
+	max-width: 100% !important;
+	height: 100% !important;
 }
