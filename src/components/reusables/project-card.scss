@@ -1,7 +1,11 @@
 .project-card {
-	height: 100%;
+	// height: 100%;
 }
 
-.uk-cover-container {
-	height: 190px;
+.project-card-image {
+	height: 190px !important;
+}
+
+.uk-card-body {
+	height: 150px;
 }

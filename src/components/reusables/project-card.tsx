@@ -17,7 +17,13 @@ const ProjectCard = (props: IProjectCard) => (
 		className="uk-card uk-card-default uk-hover project-card"
 		uk-hover="true"
 	>
-		<div className={"uk-card-media-" + props.title + " uk-cover-container"}>
+		<div
+			className={
+				"uk-card-media-" +
+				props.title +
+				" uk-cover-container project-card-image"
+			}
+		>
 			<img
 				src={props.imgSrc}
 				className={props.customClassName + "-image"}

@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
 
 import "./project-modal.scss";
 
@@ -14,6 +14,7 @@ const ProjectModal = (props: IProjectModal) => (
 	<div
 		className="project-modal uk-modal-full  "
 		id={props.projectModalId}
+		key={"modal-" + props.projectModalId}
 		uk-modal="true"
 	>
 		<div className="uk-modal-dialog uk-background-secondary uk-dark">
@@ -34,7 +35,7 @@ const ProjectModal = (props: IProjectModal) => (
 						<ul className="project-slideshow uk-slideshow-items">
 							{props.slideshowArray
 								? props.slideshowArray.map((img, i) => (
-										<li>
+										<li key={i + "-slideshow-image"}>
 											<img
 												src={img}
 												key={i}
@@ -61,7 +62,7 @@ const ProjectModal = (props: IProjectModal) => (
 					</div>
 					<ul className="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
 				</div>
-				<div className="uk-padding-large uk-light uk-flex-top">
+				<div className="uk-padding-large uk-light uk-flex-top project-description-modal">
 					<h1>{props.headlineModal}</h1>
 					<div className="project-description">
 						<div className="overall-description">

@@ -44,7 +44,7 @@ const Projects = () => (
 					title="Quiz applikasjon"
 					description="En simpel tidsbasert quiz hvor man kan velge hvor mange spørsmål man ønsker å svare på."
 					imgSrc={triviaGameMenuImg}
-					customClassName="trivia-applikasjon"
+					customClassName=" trivia-applikasjon"
 					slideshowArray={[
 						triviaLandingPageImg,
 						triviaGameplayImg,
