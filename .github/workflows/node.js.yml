@@ -4,8 +4,10 @@
 name: CI/CD
 
 on:
-  [push, pull_request]
-
+  push:
+    branches:
+      - master
+      - 'development'
 jobs:
   which_branch:
     runs-on: ubuntu-latest
@@ -30,6 +32,8 @@ jobs:
         
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          ref: $BRANCH_NAME
       
       - name: Set up Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
@@ -39,7 +43,6 @@ jobs:
       - name: Cache dependencies
         uses: actions/cache@v2
         with:
-          ref: $BRANCH_NAME
           path: |
             **/node_modules
           key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
