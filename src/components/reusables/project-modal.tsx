@@ -12,12 +12,12 @@ interface IProjectModal {
 
 const ProjectModal = (props: IProjectModal) => (
 	<div
-		className="project-modal uk-modal-full  "
+		className="project-modal project-modal-wrapper uk-modal-full"
 		id={props.projectModalId}
 		key={"modal-" + props.projectModalId}
 		uk-modal="true"
 	>
-		<div className="uk-modal-dialog uk-background-secondary uk-dark">
+		<div className="uk-modal-dialog uk-background-secondary uk-dark dialog-wrapper">
 			<button
 				className="uk-modal-close-full uk-close-large uk-background-secondary"
 				type="button"
@@ -64,7 +64,10 @@ const ProjectModal = (props: IProjectModal) => (
 				</div>
 				<div className="uk-padding-large uk-light uk-flex-top project-description-modal">
 					<h1>{props.headlineModal}</h1>
-					<div className="project-description">
+					<div
+						className="project-description"
+						uk-overflow-auto="true"
+					>
 						<div className="overall-description">
 							{props.projectDescription}
 						</div>
