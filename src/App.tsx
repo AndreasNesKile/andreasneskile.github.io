@@ -7,6 +7,7 @@ import { fas, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "./App.scss";
 import Introduction from "./components/introduction";
 import Projects from "./components/projects";
+import Experience from "./components/experience";
 
 library.add(fab, fas, faGithub, faLinkedin, faChevronDown);
 
@@ -79,6 +80,9 @@ function App() {
 					<div className="uk-section experience-section">
 						<div className="section-title experience" id="erfaring">
 							<h1 className="projects-title">Erfaring</h1>
+						</div>
+						<div className="uk-container experience-container">
+							<Experience />
 						</div>
 					</div>
 					<div className="uk-section projects-section">

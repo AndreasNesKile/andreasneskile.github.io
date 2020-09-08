@@ -5,37 +5,7 @@ const QuizApplicationDescription = () => (
 		<div className="quiz-general-description">
 			En simpel quiz-applikasjon hvor man på forhånd bestemmer antall
 			spørsmål (mellom 10-20) for en runde. Spørsmålenes kategori er
-			tilfeldig utvalgt. En simpel quiz-applikasjon hvor man på forhånd
-			bestemmer antall spørsmål (mellom 10-20) for en runde. Spørsmålenes
-			kategori er tilfeldig utvalgt. En simpel quiz-applikasjon hvor man
-			på forhånd bestemmer antall spørsmål (mellom 10-20) for en runde.
-			Spørsmålenes kategori er tilfeldig utvalgt. En simpel
-			quiz-applikasjon hvor man på forhånd bestemmer antall spørsmål
-			(mellom 10-20) for en runde. Spørsmålenes kategori er tilfeldig
-			utvalgt. En simpel quiz-applikasjon hvor man på forhånd bestemmer
-			antall spørsmål (mellom 10-20) for en runde. Spørsmålenes kategori
-			er tilfeldig utvalgt. En simpel quiz-applikasjon hvor man på forhånd
-			bestemmer antall spørsmål (mellom 10-20) for en runde. Spørsmålenes
-			kategori er tilfeldig utvalgt.
-			<var>
-				En simpel quiz-applikasjon hvor man på forhånd bestemmer antall
-				spørsmål (mellom 10-20) for en runde. Spørsmålenes kategori er
-				tilfeldig utvalgt.
-			</var>
-			En simpel quiz-applikasjon hvor man på forhånd bestemmer antall
-			spørsmål (mellom 10-20) for en runde. Spørsmålenes kategori er
-			tilfeldig utvalgt. En simpel quiz-applikasjon hvor man på forhånd
-			bestemmer antall spørsmål (mellom 10-20) for en runde. Spørsmålenes
-			kategori er tilfeldig utvalgt. En simpel quiz-applikasjon hvor man
-			på forhånd bestemmer antall spørsmål (mellom 10-20) for en runde.
-			Spørsmålenes kategori er tilfeldig utvalgt. En simpel
-			quiz-applikasjon hvor man på forhånd bestemmer antall spørsmål
-			(mellom 10-20) for en runde. Spørsmålenes kategori er tilfeldig
-			utvalgt. En simpel quiz-applikasjon hvor man på forhånd bestemmer
-			antall spørsmål (mellom 10-20) for en runde. Spørsmålenes kategori
-			er tilfeldig utvalgt. En simpel quiz-applikasjon hvor man på forhånd
-			bestemmer antall spørsmål (mellom 10-20) for en runde. Spørsmålenes
-			kategori er tilfeldig utvalgt.
+			tilfeldig utvalgt.
 		</div>
 		<hr />
 		<div className="stack-wrapper">

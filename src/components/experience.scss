@@ -1,0 +1,66 @@
+.experience-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+.experience-list {
+	color: white;
+}
+
+.work-experience-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+.work-experience-wrapper h2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.jobs-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+.language-experience-wrapper {
+	display: flex;
+	flex-flow: row;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.experience-list h2 {
+	color: white;
+}
+
+.experience-list div {
+	margin: 20px;
+}
+
+.experience-list a {
+	color: white;
+}
+
+.experience-list a:hover {
+	opacity: 0.5;
+}
+
+.experience-list h3 {
+	color: white;
+}
+
+.cernlogo {
+	width: 70px;
+	height: auto;
+}
