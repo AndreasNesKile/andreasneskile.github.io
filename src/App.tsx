@@ -69,7 +69,10 @@ function App() {
 							))}
 						</ul>
 					</div>
-					<div className="uk-section introduction-section">
+					<div
+						className="uk-section introduction-section"
+						id="section-1"
+					>
 						<div
 							className="uk-container introduction-container uk-animation-slide-top-medium"
 							id="introduksjon"
@@ -77,7 +80,10 @@ function App() {
 							<Introduction />
 						</div>
 					</div>
-					<div className="uk-section experience-section">
+					<div
+						className="uk-section experience-section"
+						id="section-2"
+					>
 						<div className="section-title experience" id="erfaring">
 							<h1 className="projects-title">Erfaring</h1>
 						</div>
@@ -85,7 +91,7 @@ function App() {
 							<Experience />
 						</div>
 					</div>
-					<div className="uk-section projects-section">
+					<div className="uk-section projects-section" id="section-3">
 						<div className="section-title-projects" id="prosjekter">
 							<h1 className="projects-title">Prosjekter</h1>
 						</div>
@@ -106,7 +112,7 @@ function App() {
 					</div>
 				</div>
 
-				<div className="footer-wrapper">
+				<div className="footer-wrapper" id="section-4">
 					<div className="footer" id="sosiale-medier">
 						<div className="socials-wrapper">
 							<li className="socials-list">

@@ -21,10 +21,6 @@ body,
 	height: 100%;
 }
 
-.dotnav {
-	position: sticky !important;
-}
-
 .introduction-section {
 	height: 100vh;
 }
@@ -38,7 +34,6 @@ body,
 	background: rgba(255, 29, 88, 0.2);
 	display: flex;
 	flex-direction: column;
-	// margin-bot: 40px;
 }
 
 .section-title-projects {
@@ -107,9 +102,13 @@ body,
 }
 
 .dotnav {
-	z-index: 10;
+	@media screen and (max-width: 750px) {
+		visibility: hidden;
+	}
+	z-index: 10000;
 	margin-left: 20px;
 	width: 50px;
+	position: sticky !important;
 }
 
 .to-the-top-wrapper {

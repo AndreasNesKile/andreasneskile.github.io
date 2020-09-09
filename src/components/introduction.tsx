@@ -4,13 +4,14 @@ import "./introduction.scss";
 
 const Introduction = () => (
 	<div className="introduction-section">
-		<div className="text">
+		<div className="text-wrapper">
 			Hei, jeg heter
-			<span className="highlight">Andreas Nes Kile</span>.
+			<span className="highlight">Andreas Nes Kile</span>
+			.
 			<br />
 			<div className="break"></div>
 			<div className="i-am-container">
-				Jeg er en
+				<span className="description-me"> Jeg er en</span>
 				<div className="fullstack-wrapper ">
 					<div className="junior-text uk-badge">junior</div>
 					<div className="full-p uk-animation-slide-top">full</div>
@@ -18,7 +19,7 @@ const Introduction = () => (
 						stack
 					</div>
 				</div>
-				utvikler.
+				<div className="utvikler-wrapper">utvikler.</div>
 			</div>
 		</div>
 	</div>

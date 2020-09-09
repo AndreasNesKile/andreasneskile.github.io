@@ -1,5 +1,4 @@
 .introduction-section {
-	height: 100vh;
 	display: flex;
 	flex-flow: column;
 	flex-direction: column;
@@ -8,23 +7,24 @@
 	text-align: center;
 }
 
-.text {
+.text-wrapper {
 	font-size: 32pt;
 	color: white;
 	font-weight: bold;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 
 	& .highlight {
 		color: #fff685;
-		width: 360px;
 		margin-left: 10px;
 	}
 
-	display: flex;
-	flex-flow: column;
-	flex-wrap: wrap;
-	flex-direction: row;
-	width: 100%;
-	justify-content: center;
+	@media screen and (max-width: 525px) {
+		font-size: 1.4em;
+		margin-top: 5px;
+	}
 }
 
 .break {
@@ -35,7 +35,6 @@
 	display: flex;
 	flex: 2;
 	flex-wrap: wrap;
-	flex-flow: column;
 	flex-direction: row;
 	justify-content: center;
 }
@@ -46,13 +45,18 @@
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: center;
-	margin: 15px 30px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 25px;
 	top: -1em;
+}
+
+.description-me {
+	margin-top: 10px;
 }
 
 .full-p {
 	position: relative;
-	width: auto;
 	font-size: 0.7em;
 	margin-top: 10px;
 	margin-bottom: -15px;
@@ -63,6 +67,7 @@
 .stack-p {
 	position: relative;
 	width: auto;
+	margin-top: 10px;
 	font-size: 0.7em;
 	animation-delay: 0.3s;
 	animation-duration: 0.7s;
@@ -75,4 +80,8 @@
 	right: 2em;
 	z-index: 9;
 	transform: rotate(-45deg) scale(0.7);
+}
+
+.utvikler-wrapper {
+	margin-top: 10px;
 }
