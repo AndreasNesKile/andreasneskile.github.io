@@ -1,6 +1,7 @@
 import React from "react";
 
 import CernLogo from "../assets/cern-logo.png";
+import ExperisLogo from "../assets/Logo_Academy.svg";
 
 import "./experience.scss";
 
@@ -10,7 +11,7 @@ const Experience = () => (
 			<div className="experience-list">
 				<div className="language-experience-wrapper">
 					<div className="webdevelopment-wrapper">
-						<h3>Web Utvikling</h3>
+						<h3>Webutvikling</h3>
 						<ul>
 							<li>HMTL</li>
 							<li>CSS</li>
@@ -84,11 +85,26 @@ const Experience = () => (
 					<div className="jobs-wrapper">
 						<div className="job-experis-wrapper">
 							<h3>Experis Academy Norway (2020- )</h3>
+							<a href="https://experisacademy.no/">
+								<img
+									src={ExperisLogo}
+									className="experis-logo"
+									alt="experis logo"
+								></img>
+							</a>
 						</div>
 						<div className="job-cern-wrapper">
 							<h3>CERN (2018-2019)</h3>
-							<img src={CernLogo} className="cernlogo"></img>
-							<p>Teknisk student </p>
+							<a
+								href="https://jobs.smartrecruiters.com/CERN/743999714837270-technical-studentships-it-mathematics-and-robotics?trid=c3270850-b100-4fd2-8aad-40a973eec45a"
+								target="_"
+							>
+								<img
+									src={CernLogo}
+									className="cern-logo"
+									alt="cern logo"
+								></img>
+							</a>
 						</div>
 					</div>
 				</div>

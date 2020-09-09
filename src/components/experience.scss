@@ -32,6 +32,13 @@
 	align-content: center;
 }
 
+.job-experis-wrapper a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
 .language-experience-wrapper {
 	display: flex;
 	flex-flow: row;
@@ -60,7 +67,12 @@
 	color: white;
 }
 
-.cernlogo {
-	width: 70px;
+.experis-logo {
+	width: 250px;
+	height: auto;
+}
+
+.cern-logo {
+	width: 100px;
 	height: auto;
 }
