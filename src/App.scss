@@ -1,0 +1,154 @@
+html,
+body,
+#App,
+#App > div {
+	margin: 0;
+	background: #222;
+	scroll-behavior: smooth;
+}
+
+.main-content {
+	display: flex;
+	flex-flow: wrap column;
+}
+
+.content-wrapper {
+	display: flex;
+	flex-flow: wrap column;
+	justify-content: center;
+}
+
+.introduction-container {
+	height: 100vh;
+	justify-content: center;
+	align-content: center;
+	display: flex;
+	flex: 0 1 auto;
+	flex-flow: wrap column;
+}
+
+.experience-section {
+	background: rgba(247, 89, 144, 0.2);
+	height: 100%;
+}
+
+.projects-section {
+	background: rgba(255, 29, 88, 0.2);
+	display: flex;
+	flex-flow: wrap column;
+	flex: 0 1 auto;
+	justify-content: center;
+	align-content: center;
+}
+
+.section-title-projects {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+
+.projects-title {
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-flow: column;
+	flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+	background-color: #1e87f0;
+	color: white;
+	text-align: center;
+	height: 100px;
+	padding-top: 20px;
+}
+
+.socials-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 30px;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+
+	& .uk-icon {
+		padding-top: 10px;
+		padding-left: 20px;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	& .uk-icon:hover {
+		opacity: 0.5;
+		color: white;
+		text-decoration: none;
+	}
+
+	& li {
+		list-style: none;
+	}
+}
+
+.socials-linkedin {
+	color: white;
+}
+
+.socials-github {
+	color: white;
+}
+
+.copyright {
+	padding-top: 20px;
+}
+
+.dotnav {
+	@media screen and (max-width: 770px) {
+		visibility: hidden;
+	}
+	z-index: 10000;
+	margin-left: 20px;
+	width: 50px;
+	position: sticky !important;
+}
+
+.top-button-container {
+	justify-content: center;
+	align-content: center;
+	display: flex;
+	margin-top: 80px;
+	z-index: 10000;
+}
+
+.tooltip-container {
+	text-transform: capitalize;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.uk-dotnav-categories {
+	text-transform: capitalize;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.introduksjon {
+	background: #fff685;
+	color: black;
+}
+
+.erfaring {
+	background: #f75990;
+}
+
+.prosjekter {
+	background: #ff1d58;
+}
+
+.sosiale-medier {
+	background: #1e87f0;
+}
