@@ -33,7 +33,7 @@ function App() {
 		<div className="App">
 			<div className="main-content">
 				<div className="content-wrapper">
-					<div className="uk-position-center-left uk-light dotnav">
+					{/* <div className="uk-position-center-left uk-light dotnav">
 						<ul
 							className="uk-dotnav uk-dotnav-vertical"
 							id="sections"
@@ -68,15 +68,9 @@ function App() {
 								</li>
 							))}
 						</ul>
-					</div>
-					<div
-						className="uk-section introduction-section"
-						id="section-1"
-					>
-						<div
-							className="uk-container introduction-container uk-animation-slide-top-medium"
-							id="introduksjon"
-						>
+					</div> */}
+					<div className="introduction-section" id="introduksjon">
+						<div className="introduction-container uk-animation-slide-top-medium">
 							<Introduction />
 						</div>
 					</div>
@@ -98,17 +92,17 @@ function App() {
 						<div className="uk-container projects-container">
 							<Projects />
 						</div>
-					</div>
-					<div className="to-the-top-wrapper">
-						<a
-							href="/"
-							uk-totop="true"
-							uk-scroll="true"
-							uk-tooltip={
-								"title: Til toppen; pos: top; cls: uk-active to-the-top-button"
-							}
-							className="to-top-button uk-position-top"
-						></a>
+						<div className="top-button-container">
+							<a
+								href="/"
+								uk-totop="true"
+								uk-scroll="true"
+								uk-tooltip={
+									"title: Til toppen; pos: top; cls: uk-active tooltip-container"
+								}
+								className="to-top-button"
+							></a>
+						</div>
 					</div>
 				</div>
 

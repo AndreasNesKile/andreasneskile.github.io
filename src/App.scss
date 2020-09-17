@@ -9,20 +9,22 @@ body,
 
 .main-content {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	height: 100%;
+	flex-flow: wrap column;
 }
 
 .content-wrapper {
 	display: flex;
-	flex-flow: column;
+	flex-flow: wrap column;
 	justify-content: center;
-	height: 100%;
 }
 
-.introduction-section {
+.introduction-container {
 	height: 100vh;
+	justify-content: center;
+	align-content: center;
+	display: flex;
+	flex: 0 1 auto;
+	flex-flow: wrap column;
 }
 
 .experience-section {
@@ -33,7 +35,10 @@ body,
 .projects-section {
 	background: rgba(255, 29, 88, 0.2);
 	display: flex;
-	flex-direction: column;
+	flex-flow: wrap column;
+	flex: 0 1 auto;
+	justify-content: center;
+	align-content: center;
 }
 
 .section-title-projects {
@@ -70,23 +75,23 @@ body,
 	width: 100%;
 	justify-content: center;
 	align-content: center;
-}
 
-.socials-wrapper li {
-	list-style: none;
-}
+	& .uk-icon {
+		padding-top: 10px;
+		padding-left: 20px;
+		text-align: center;
+		text-decoration: none;
+	}
 
-.uk-icon {
-	padding-top: 10px;
-	padding-left: 20px;
-	text-align: center;
-	text-decoration: none;
-}
+	& .uk-icon:hover {
+		opacity: 0.5;
+		color: white;
+		text-decoration: none;
+	}
 
-.uk-icon:hover {
-	opacity: 0.5;
-	color: white;
-	text-decoration: none;
+	& li {
+		list-style: none;
+	}
 }
 
 .socials-linkedin {
@@ -102,7 +107,7 @@ body,
 }
 
 .dotnav {
-	@media screen and (max-width: 750px) {
+	@media screen and (max-width: 770px) {
 		visibility: hidden;
 	}
 	z-index: 10000;
@@ -111,11 +116,15 @@ body,
 	position: sticky !important;
 }
 
-.to-the-top-wrapper {
-	position: relative;
+.top-button-container {
+	justify-content: center;
+	align-content: center;
+	display: flex;
+	margin-top: 80px;
+	z-index: 10000;
 }
 
-.to-the-top-button {
+.tooltip-container {
 	text-transform: capitalize;
 	font-size: 1em;
 	font-weight: 500;

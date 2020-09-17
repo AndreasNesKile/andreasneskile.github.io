@@ -6,3 +6,22 @@
 	max-width: 100% !important;
 	height: auto !important;
 }
+
+.dialog-wrapper {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+.project-modal {
+	flex: 0 1 auto;
+	height: 100%;
+	overflow-y: hidden;
+}
+
+.project-description-text {
+	width: auto;
+	height: 700px;
+	overflow-y: auto;
+	position: relative;
+}

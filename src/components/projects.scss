@@ -1,6 +1,7 @@
 .projects-wrapper {
 	position: relative;
 	display: flex;
+	flex: 0 1 auto;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-content: center;
@@ -9,13 +10,10 @@
 	& .project-card {
 		width: 400px;
 
-		@media only screen and (max-width: 375px) {
+		@media only screen and (max-width: 450px) {
 			font-size: 1em;
-			width: 250px;
+			width: auto;
+			margin: 0 20px;
 		}
-		// height: auto;
 	}
-	// @media only screen and (max-width: 1980px) {
-	// 	width: 350px;
-	// }
 }

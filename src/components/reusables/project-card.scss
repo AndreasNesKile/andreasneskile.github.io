@@ -3,9 +3,15 @@
 }
 
 .project-card-image {
-	height: 190px !important;
+	height: 195px !important;
 }
 
 .uk-card-body {
-	height: 150px;
+	@media screen and (min-height: 450px) {
+		height: 200px;
+	}
+
+	&.project-description {
+		height: 70px;
+	}
 }

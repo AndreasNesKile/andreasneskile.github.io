@@ -32,7 +32,7 @@ const ProjectCard = (props: IProjectCard) => (
 		</div>
 		<div className="uk-card-body">
 			<h3 className="uk-card-title">{props.title}</h3>
-			<p>{props.description}</p>
+			<p className="project-description">{props.description}</p>
 		</div>
 		<div className="uk-card-footer">
 			<button

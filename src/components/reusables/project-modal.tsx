@@ -25,7 +25,7 @@ const ProjectModal = (props: IProjectModal) => (
 			></button>
 			<div
 				className={
-					"uk-grid-collapse uk-child-width-1-2@s uk-flex-middle project-modal " +
+					"uk-grid-collapse modal-content-wrapper uk-child-width-1-2@s uk-flex-middle project-modal " +
 					props.projectModalId
 				}
 				uk-grid="true"
@@ -62,15 +62,10 @@ const ProjectModal = (props: IProjectModal) => (
 					</div>
 					<ul className="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
 				</div>
-				<div className="uk-padding-large uk-light uk-flex-top project-description-modal">
+				<div className="uk-padding-large uk-light uk-flex-top project-description-wrapper">
 					<h1>{props.headlineModal}</h1>
-					<div
-						className="project-description"
-						uk-overflow-auto="true"
-					>
-						<div className="overall-description">
-							{props.projectDescription}
-						</div>
+					<div className="project-description-text">
+						{props.projectDescription}
 					</div>
 				</div>
 			</div>
