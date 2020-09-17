@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - master
-      - 'development'
 jobs:
   which_branch:
     runs-on: ubuntu-latest
