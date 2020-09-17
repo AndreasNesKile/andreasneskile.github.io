@@ -8,7 +8,7 @@ on:
     branches:
       - master
 jobs:
-  which_branch:
+  deploy:
     runs-on: ubuntu-latest
 
     strategy:
@@ -60,7 +60,7 @@ jobs:
         run: |
           git config --global user.name $user_name
           git config --global user.email $user_email
-          git remote set-url origin https://${github_token}@github.com/${repository}
+          git remote set-url origin https://${github_token}@github.com/
           npm run deploy
         env: 
           user_name: 'github-actions[bot]'
