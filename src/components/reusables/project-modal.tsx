@@ -47,18 +47,20 @@ const ProjectModal = (props: IProjectModal) => (
 								  ))
 								: ""}
 						</ul>
-						<a
+						<button
 							className="uk-position-center-left uk-position-small uk-hidden-hover"
-							href="#"
+							// href="#"
 							uk-slidenav-previous="true"
 							uk-slideshow-item="previous"
-						></a>
-						<a
+							aria-label="previous-picture-button"
+						></button>
+						<button
 							className="uk-position-center-right uk-position-small uk-hidden-hover"
-							href="#"
+							// href="#"
 							uk-slidenav-next="true"
 							uk-slideshow-item="next"
-						></a>
+							aria-label="next-picture-button"
+						></button>
 					</div>
 					<ul className="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
 				</div>

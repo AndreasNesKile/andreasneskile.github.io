@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "uikit";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -11,23 +11,23 @@ import Experience from "./components/experience";
 
 library.add(fab, fas, faGithub, faLinkedin, faChevronDown);
 
-const sections = [
-	{
-		sectionName: "introduksjon",
-	},
-	{
-		sectionName: "erfaring",
-	},
-	{
-		sectionName: "prosjekter",
-	},
-	{
-		sectionName: "sosiale-medier",
-	},
-];
+// const sections = [
+// 	{
+// 		sectionName: "introduksjon",
+// 	},
+// 	{
+// 		sectionName: "erfaring",
+// 	},
+// 	{
+// 		sectionName: "prosjekter",
+// 	},
+// 	{
+// 		sectionName: "sosiale-medier",
+// 	},
+// ];
 
 function App() {
-	const [activeSection, setActiveSection] = useState(sections[0]);
+	//const [activeSection, setActiveSection] = useState(sections[0]);
 
 	return (
 		<div className="App">
@@ -93,15 +93,15 @@ function App() {
 							<Projects />
 						</div>
 						<div className="top-button-container">
-							<a
-								href="/"
+							<div
 								uk-totop="true"
 								uk-scroll="true"
 								uk-tooltip={
 									"title: Til toppen; pos: top; cls: uk-active tooltip-container"
 								}
 								className="to-top-button"
-							></a>
+								aria-label="Til toppen-knapp"
+							></div>
 						</div>
 					</div>
 				</div>

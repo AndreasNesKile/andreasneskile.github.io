@@ -44,8 +44,9 @@ const Experience = () => (
 								<a
 									href="https://flask.palletsprojects.com/en/1.1.x/"
 									target="_"
-								></a>
-								- Flask
+								>
+									- Flask
+								</a>
 							</dd>
 							<li>Git/GitHub/Gitlab</li>
 							<li>Java</li>
