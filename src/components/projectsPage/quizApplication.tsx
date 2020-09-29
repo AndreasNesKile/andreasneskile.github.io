@@ -7,6 +7,8 @@ const QuizApplicationDescription = () => (
 			spørsmål (mellom 10-20) for en runde. Spørsmålenes kategori er
 			tilfeldig utvalgt.
 		</div>
+		<br />
+		<div>Kunde: Experis Academy</div>
 		<hr />
 		<div className="stack-wrapper">
 			<h1>Stack</h1>

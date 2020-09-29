@@ -17,7 +17,7 @@ const ProjectModal = (props: IProjectModal) => (
 		key={"modal-" + props.projectModalId}
 		uk-modal="true"
 	>
-		<div className="uk-modal-dialog uk-background-secondary uk-dark dialog-wrapper">
+		<div className="uk-modal-dialog uk-background-secondary dialog-wrapper">
 			<button
 				className="uk-modal-close-full uk-close-large uk-background-secondary"
 				type="button"
@@ -25,10 +25,9 @@ const ProjectModal = (props: IProjectModal) => (
 			></button>
 			<div
 				className={
-					"uk-grid-collapse modal-content-wrapper uk-child-width-1-2@s uk-flex-middle project-modal " +
+					"modal-content-wrapper project-modal " +
 					props.projectModalId
 				}
-				uk-grid="true"
 			>
 				<div uk-slideshow="true">
 					<div className="uk-position-relative uk-visible-toggle">

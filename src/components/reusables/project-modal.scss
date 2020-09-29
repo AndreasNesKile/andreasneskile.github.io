@@ -9,19 +9,41 @@
 
 .dialog-wrapper {
 	display: flex;
-	flex-flow: column;
-	height: 100%;
+	flex-flow: wrap column;
+	position: relative;
+	margin: 0;
+	padding: 0;
 }
 
 .project-modal {
-	flex: 0 1 auto;
+	// flex: 0 1 auto;
 	height: 100%;
-	overflow-y: hidden;
+	// overflow-y: hidden;
+}
+
+.project-description-wrapper {
+	height: 100%;
+}
+
+.modal-content-wrapper {
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: column;
 }
 
 .project-description-text {
-	width: auto;
-	height: 700px;
+	// width: auto;
+	// height: calc(100vh - 450px);
 	overflow-y: auto;
+	position: relative;
+	// scrollbar-width: none;
+
+	// @media screen and (max-height: 450px) {
+	// 	height: calc(100vh - 300px);
+	// }
+}
+
+.quiz-general-description {
+	height: auto;
 	position: relative;
 }
