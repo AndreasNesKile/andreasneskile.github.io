@@ -28,6 +28,9 @@ const PropertyProjectDescription = () => (
 			tilgang til ytterlige informasjon som eier- og oppussingshistorikk,
 			samt kontaktinformasjon til eier av eiendommen.
 		</div>
+		<br />
+		<div>Kunde: Experis Academy</div>
+
 		<hr />
 		<div className="stack-wrapper">
 			<h1>Stack</h1>
