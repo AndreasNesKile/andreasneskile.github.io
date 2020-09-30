@@ -23,14 +23,9 @@ const ProjectModal = (props: IProjectModal) => (
 				type="button"
 				uk-close="true"
 			></button>
-			<div
-				className={
-					"modal-content-wrapper project-modal " +
-					props.projectModalId
-				}
-			>
-				<div uk-slideshow="true">
-					<div className="uk-position-relative uk-visible-toggle">
+			<div className={"modal-content-wrapper " + props.projectModalId}>
+				<div uk-slideshow="true" className="slideshow-container">
+					<div className="uk-position-relative uk-visible-toggle slideshow-wrapper">
 						<ul className="project-slideshow uk-slideshow-items">
 							{props.slideshowArray
 								? props.slideshowArray.map((img, i) => (
@@ -39,7 +34,7 @@ const ProjectModal = (props: IProjectModal) => (
 												src={img}
 												key={i}
 												alt=""
-												uk-cover="true"
+												// uk-cover="true"
 												className="slideshow-image"
 											></img>
 										</li>

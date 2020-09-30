@@ -2,45 +2,33 @@
 	list-style: none;
 }
 
-.slideshow-image {
-	max-width: 100% !important;
-	height: auto !important;
-}
+.slideshow-container {
+	width: 100%;
+	height: auto;
 
-.dialog-wrapper {
-	display: flex;
-	flex-flow: wrap column;
-	position: relative;
-	margin: 0;
-	padding: 0;
-}
+	@media only screen and (min-width: 800px) {
+		width: 800px;
+		margin: 0 auto;
 
-.project-modal {
-	// flex: 0 1 auto;
-	height: 100%;
-	// overflow-y: hidden;
-}
-
-.project-description-wrapper {
-	height: 100%;
+		& img {
+			height: 100%;
+			width: 100%;
+		}
+	}
 }
 
 .modal-content-wrapper {
 	display: flex;
 	flex: 0 1 auto;
 	flex-direction: column;
+	justify-content: center;
+	align-content: center;
 }
 
 .project-description-text {
-	// width: auto;
-	// height: calc(100vh - 450px);
+	width: auto;
 	overflow-y: auto;
 	position: relative;
-	// scrollbar-width: none;
-
-	// @media screen and (max-height: 450px) {
-	// 	height: calc(100vh - 300px);
-	// }
 }
 
 .quiz-general-description {

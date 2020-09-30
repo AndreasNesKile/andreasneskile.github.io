@@ -20,7 +20,7 @@ const QuizApplicationDescription = () => (
 			<br />
 			<hr />
 			<div className="github-link-property-project">
-				<li>
+				<li style={{ listStyle: "none" }}>
 					<a
 						href="https://github.com/AndreasNesKile/trivia-application"
 						target="_"

@@ -13,10 +13,7 @@ interface IProjectCard {
 }
 
 const ProjectCard = (props: IProjectCard) => (
-	<div
-		className="uk-card uk-card-default uk-hover project-card"
-		uk-hover="true"
-	>
+	<div className="uk-card uk-card-default project-card">
 		<div
 			className={
 				"uk-card-media-" +
@@ -35,13 +32,15 @@ const ProjectCard = (props: IProjectCard) => (
 			<p className="project-description">{props.description}</p>
 		</div>
 		<div className="uk-card-footer">
-			<button
-				className="uk-button uk-button-primary uk-margin-small-right"
-				type="button"
-				uk-toggle={"target: #" + props.customClassName + "-modal"}
-			>
-				Les mer
-			</button>
+			<div className="button-container">
+				<button
+					className="uk-button uk-button-primary uk-margin-small-right "
+					type="button"
+					uk-toggle={"target: #" + props.customClassName + "-modal"}
+				>
+					Les mer
+				</button>
+			</div>
 		</div>
 		<ProjectModal
 			projectModalId={props.customClassName + "-modal"}
