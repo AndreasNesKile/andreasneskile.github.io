@@ -4,7 +4,7 @@ const QuizApplicationDescription = () => (
 	<div className="quiz-application-description">
 		<div className="quiz-general-description">
 			Ein simpel quiz-applikasjon kor ein på førehand bestemmer antall
-			spørsmål (mellom 10-20) for ei runde. Spørsmålenes kategori er
+			spørsmål (mellom 10-20) for ei runde. Kategori for spørsmåla er
 			tilfeldig utvalde.
 			<br />
 			<br />
