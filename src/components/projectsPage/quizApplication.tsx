@@ -6,6 +6,10 @@ const QuizApplicationDescription = () => (
 			Ein simpel quiz-applikasjon kor ein på førehand bestemmer antall
 			spørsmål (mellom 10-20) for ei runde. Spørsmålenes kategori er
 			tilfeldig utvalde.
+			<br />
+			<br />
+			Applikasjonen er laga med hensyn til å utforske rammeverket Vue.js
+			og generell CSS-styling.
 		</div>
 		<br />
 		<div>Kunde: Experis Academy</div>
