@@ -5,28 +5,29 @@ import React from "react";
 const PropertyProjectDescription = () => (
 	<div className="property-project-description">
 		<div className="general-description-property-project">
-			Applikasjonen lar deg se på ulike fiktive eiendommer, og basert på
-			din autorisasjon (3 ulike nivåer) får du informasjon tilgjengelig
-			for gjeldende autorisjonsnivå.
+			Applikasjonen let deg sjå på ulike fiktive eigendommar, og basert på
+			din autorisasjon (3 ulike nivåer) får du informasjon tilgjengeleg
+			for gjeldande autorisjonsnivå.
 			<br />
 			<br />
-			Som en
-			<span style={{ fontStyle: "italic" }}> ikke-innlogget</span> bruker
-			av applikasjonen har du tilgang til ulik informasjon basert på
-			autorisjonsnivået. En vanlig bruker kan se informasjon som pris,
-			plassering og bilder av eiendommen.
+			Som ein
+			<span style={{ fontStyle: "italic" }}> ikkje-innlogga</span> brukar
+			av applikasjonen har du tilgong til ulik informasjon basert på
+			autorisjonsnivået. Ein vanleg brukar kan sjå informasjon som pris,
+			plassering og bilete av eigendommen.
 			<br />
 			<br />
-			En innlogget
-			<span style={{ fontStyle: "italic" }}> standard bruker </span>{" "}
-			(kjøper) vil kunne se byggingsår, oppussingshistorikk og mer
-			generell informasjon om eiendommen.
+			Ein innlogga
+			<span style={{ fontStyle: "italic" }}> standard brukar </span>{" "}
+			(kjøpar) vil kunne sjå byggingsår, oppussingshistorikk og meir
+			generell informasjon om eigendommen.
 			<br />
 			<br />
-			Er man innlogget som
-			<span style={{ fontStyle: "italic" }}> eiendomsmegler</span> får man
-			tilgang til ytterlige informasjon som eier- og oppussingshistorikk,
-			samt kontaktinformasjon til eier av eiendommen.
+			Er ein innlogga som
+			<span style={{ fontStyle: "italic" }}> eiendomsmeglar</span> får ein
+			tilgong til ytterligare informasjon som eigar- og
+			oppussingshistorikk, samt kontaktinformasjon til eigar av
+			eigendommen.
 		</div>
 		<br />
 		<div>Kunde: Experis Academy</div>

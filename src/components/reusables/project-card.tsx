@@ -38,7 +38,7 @@ const ProjectCard = (props: IProjectCard) => (
 					type="button"
 					uk-toggle={"target: #" + props.customClassName + "-modal"}
 				>
-					Les mer
+					Les meir
 				</button>
 			</div>
 		</div>

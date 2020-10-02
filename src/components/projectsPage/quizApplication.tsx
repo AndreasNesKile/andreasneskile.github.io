@@ -3,9 +3,9 @@ import React from "react";
 const QuizApplicationDescription = () => (
 	<div className="quiz-application-description">
 		<div className="quiz-general-description">
-			En simpel quiz-applikasjon hvor man på forhånd bestemmer antall
-			spørsmål (mellom 10-20) for en runde. Spørsmålenes kategori er
-			tilfeldig utvalgt.
+			Ein simpel quiz-applikasjon kor ein på førehand bestemmer antall
+			spørsmål (mellom 10-20) for ei runde. Spørsmålenes kategori er
+			tilfeldig utvalde.
 		</div>
 		<br />
 		<div>Kunde: Experis Academy</div>

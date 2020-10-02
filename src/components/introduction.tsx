@@ -5,13 +5,13 @@ import "./introduction.scss";
 const Introduction = () => (
 	<div className="introduction-section">
 		<div className="text-wrapper">
-			Hei, jeg heter
+			Hei, eg heiter
 			<span className="highlight">Andreas Nes Kile</span>
 			.
 			<br />
 			<div className="break"></div>
 			<div className="i-am-container">
-				<span className="description-me"> Jeg er en</span>
+				<span className="description-me"> Eg er ein</span>
 				<div className="fullstack-wrapper ">
 					<div className="junior-text uk-badge">junior</div>
 					<div className="full-p uk-animation-slide-top">full</div>
@@ -19,7 +19,7 @@ const Introduction = () => (
 						stack
 					</div>
 				</div>
-				<div className="utvikler-wrapper">utvikler.</div>
+				<div className="utvikler-wrapper">utviklar.</div>
 			</div>
 		</div>
 	</div>

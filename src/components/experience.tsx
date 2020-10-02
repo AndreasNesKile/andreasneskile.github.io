@@ -86,7 +86,7 @@ const Experience = () => (
 					<div className="uk-divider-small"></div>
 				</div>
 				<div className="certificates-container">
-					<h2>Sertifikater</h2>
+					<h2>Sertifikat</h2>
 					<div className="certificates-wrapper">
 						<div className="msca-certificate">
 							<a

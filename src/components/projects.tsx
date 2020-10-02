@@ -27,7 +27,7 @@ const Projects = () => (
 			<div className="property-project-wrapper">
 				<ProjectCard
 					title="Property Project"
-					description="Applikasjonen lar deg se på ulike fiktive eiendommer, og basert på din autorisasjon (3 ulike nivåer) får du informasjon tilgjengelig for gjeldende autorisjonsnivå."
+					description="Applikasjonen let deg sjå på ulike fiktive eigendommar, og basert på din autorisasjon (3 ulike nivå) får du informasjon tilgjengeleg for gjeldande autorisjonsnivå."
 					imgSrc={propertyLandingPageImg}
 					customClassName="property-project"
 					slideshowArray={[
@@ -42,7 +42,8 @@ const Projects = () => (
 			<div className="">
 				<ProjectCard
 					title="Quiz applikasjon"
-					description="En simpel tidsbasert quiz hvor man kan velge hvor mange spørsmål man ønsker å svare på."
+					description="Ein simpel quiz-applikasjon kor ein på førehand bestemmer antall
+					spørsmål (mellom 10-20) for ei runde."
 					imgSrc={triviaGameMenuImg}
 					customClassName="trivia-quiz"
 					slideshowArray={[

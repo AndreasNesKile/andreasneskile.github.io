@@ -87,7 +87,7 @@ function App() {
 					</div>
 					<div className="uk-section projects-section" id="section-3">
 						<div className="section-title-projects" id="prosjekter">
-							<h1 className="projects-title">Prosjekter</h1>
+							<h1 className="projects-title">Prosjekt</h1>
 						</div>
 						<div className="uk-container projects-container">
 							<Projects />
@@ -133,7 +133,7 @@ function App() {
 							</li>
 						</div>
 						<div className="copyright">
-							Håndlaget av meg | {new Date().getFullYear()}
+							Handlaga av meg | {new Date().getFullYear()}
 						</div>
 					</div>
 				</div>
