@@ -31,6 +31,11 @@ const Experience = () => (
 									- UiKit
 								</a>
 							</dd>
+							<dd>
+								<a href="https://material-ui.com/" target="_">
+									- Material-UI
+								</a>
+							</dd>
 							<li>Javascript/TypeScript</li>
 							<dd>- Reactjs</dd>
 							<dd>- Vuejs</dd>
@@ -57,28 +62,41 @@ const Experience = () => (
 							<li>SQL</li>
 							<dd>- MySSQL</dd>
 							<dd>- MongoDB</dd>
+							<li>NginX</li>
 						</ul>
 					</div>
 					<div className="computer-devops-container">
 						<h3>DevOps</h3>
 						<ul>
-							<li>Docker</li>
+							<li>Containerisation</li>
+							<dd>- Docker / Docker-compose</dd>
 							<li>CI/CD</li>
-							<dd>- GitHub Actions</dd>
-							<li>RedHat OpenShift</li>
+							<dd>- GitHub</dd>
+							<dd>- GitLab</dd>
 						</ul>
 					</div>
-					<div className="computer-engineering-container">
-						<h3>Ingeniørferdigheter</h3>
+					<div className="cloud-experience-container">
+						<h3>Cloud</h3>
 						<ul>
-							<li>Maskinlæring</li>
-							<dd>- Tensorflow</dd>
-							<dd>- Keras</dd>
-							<li>NumPy</li>
+							<li>Cloud platforms</li>
+							<dd>- AWS</dd>
+							<dd>- Azure</dd>
+							<dd>- Google</dd>
+							<dd>- Hetzner</dd>
+							<dd>- RedHat OpenShift</dd>
+							<dd>- Digial Ocean</dd>
 						</ul>
+					</div>
+					<div className="security-experience-container">
+						<h3>Sikkerhet</h3>
 						<ul>
-							<li>Data visualisering</li>
-							<dd>- Jupyter</dd>
+							<li>Autentisering og autorisasjon</li>
+							<dd>- KeyCloak</dd>
+							<dd>- JWT-tokens</dd>
+							<li>TLS-sertifikat</li>
+							<dd>- CertBot</dd>
+							<dd>- LetsEncrypt</dd>
+							<li>Kryptografi</li>
 						</ul>
 					</div>
 				</div>
@@ -86,7 +104,7 @@ const Experience = () => (
 					<div className="uk-divider-small"></div>
 				</div>
 				<div className="certificates-container">
-					<h2>Sertifikat</h2>
+					<h2>Sertifiseringer</h2>
 					<div className="certificates-wrapper">
 						<div className="msca-certificate">
 							<a

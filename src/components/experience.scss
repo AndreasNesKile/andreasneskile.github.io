@@ -4,6 +4,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+
+	& h4 {
+		color: white;
+	}
 }
 .experience-list {
 	color: white;
@@ -80,6 +84,11 @@
 	display: flex;
 	flex-flow: wrap row;
 	justify-content: center;
+
+	& .cloud-experience-container {
+		display: flex;
+		flex-flow: wrap column;
+	}
 }
 
 .certificates-container {
