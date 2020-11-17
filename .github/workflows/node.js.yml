@@ -15,20 +15,7 @@ jobs:
       matrix:
         node-version: [12.x]
 
-    steps:
-      - name: Extract branch name
-        if: github.event_name != 'pull_request'
-        shell: bash
-        run: echo "::set-env name=BRANCH_NAME::$(echo ${GITHUB_REF#refs/heads/})"
-        id: extract_branch
-      
-      - name: Print branch name
-        if: github.event_name == 'pull_request'
-        run: echo "::set-env name=BRANCH_NAME::$(echo ${GITHUB_HEAD_REF})"
-      
-      - name: Current branch name
-        run: echo 'Current branch name is '$BRANCH_NAME
-        
+    steps:        
       - name: Checkout repository
         uses: actions/checkout@v2
       
